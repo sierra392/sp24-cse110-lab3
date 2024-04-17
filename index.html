@@ -3,44 +3,132 @@
   <head>
     <title>Meeting Minutes</title>
     <meta charset="utf-8"/>
+    <link rel = "icon" href = "favicon.png">
   </head>
   <body>
     <header>
-        <h1>Meeting 1</h1>
+        <h1>Pretend Meeting 1</h1>
         <h2>Brainstorming</h2>
         <h3>April 10, 2024 </h3>
     </header>
     <section>
         <h3>People in attendence: </h3>
-        <ol>
+        <ul>
             <li>Sierra</li>
             <li>Cameron</li>
             <li>Brittany</li>
             <li>Daisy</li>
             <li>Elijah</li>
-        </ol>
-        <main>
-            <h3>Overall Meeting Agenda:</h3>
-            
-            <p><b>Unifinished Business From Last Meeting:</b></p>
-            <ul>
-                <li>Need to determine formal deadlines for project</li>
-                <li>Need to make sure everyone has access to github</li>
-            </ul>
-            <p><b>New Business to Discuss:</b></p>
-            <ul>
-                <li>Create a schedule of what days to meet going foward</li>
-                <li>Come up with possible topics our project can follow</li>
-                <li>Decide who will write the meeting minutes each time</li>
-            </ul>
-            <p><b>Miscellaneous Things to Cover:</b></p>
-            <ul>
-                <li>Should the meetings be longer?</li>
-                <li>In the future should the meetings be through video call instead?</li>
-            </ul>
-
-        </main>
+        </ul>
     </section>
+    <section>
+        <div class = "image">
+            <img src = "diagram.jpg" alt = "important diagram" width="400"/>
+        </div>
+        <div class = "video">
+            <video controls width="400">
+                <source src="IMG_0352.MOV"/>
+            </video>
+        </div>
+    <section>
+        <p>This is an important video that goes over an important point in the meeting, <br> 
+            The video covers topics about <span class= "roles">who will do what in the project</span>, in other words the video covers what <i>roles</i> 
+            people will have. This needed to be done <em>asap!</em></p>
+    </section>
+        <div class = "audio">
+            <audio controls src = "audiorec.m4a"></audio>
+        </div>
+    </section>
+    <main>
+        <h3>Overall Meeting Agenda:</h3>
+        <ol>
+            <li>Introductions</li>
+            <li>Discuss what wasn't fully covered last meeting</li>
+            <li>Go over new topics</li>
+            <li>Discuss miscellaneous questions/comments</li>
+        </ol>
+        <p><b>Unifinished Business From Last Meeting:</b></p>
+        <ul>
+            <li>Need to determine formal deadlines for project</li>
+            <li>Need to make sure everyone has access to github</li>
+        </ul>
+        <p><b>New Business to Discuss:</b></p>
+        <ul>
+            <li>Create a schedule of what days to meet going foward</li>
+            <li>Come up with possible topics our project can follow</li>
+            <li><strong>Decide who will write the meeting minutes</strong> each time</li>
+            <li>Decide other roles</li>
+        </ul>
+        <p><b>Miscellaneous Things to Cover:</b></p>
+        <ul>
+            <li>Should the meetings be longer?</li>
+            <li>In the future <strong>should the meetings be through video call</strong> instead?</li>
+        </ul>
+        <details>
+            <summary>Details</summary>
+            This is the meeting first meeting that mostly makes sure everyone has access to things so they can start working and chooses roles.
+        </details>
+    </main>
+    <nav>
+        <hr/>
+        <h3>Helpful Links</h3>
+        <ul>
+        <li><a href = "https://github.com/sierra392/Lab2_Starter">Link to Lab2 Repository</a></li>
+        <li><a href = "https://sierra392.github.io/cse110Lab1">Link to my Web Page</a></li>
+        </ul>
+    </nav>
+    <footer>
+      <form>
+        <fieldset>
+            <legend>Mandatory Form</legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" value="Enter name..." />
+                <label for="currDate">Date</label>
+                <input type="date" id="currDate" min="2024-4-13" />
+            </div>
+            <div>
+                <label>What is your age?</label>
+                <input type="radio" id="young" name="drone" value="young" checked />
+                <label for="young">Less than 25</label>
+                <input type="radio" id="older" name="drone" value="older" checked />
+                <label for="older">25+</label>
+            </div>
+            <div>
+                <label for="agree">Do you confirm this is all true?</label>
+                <input type="checkbox" id="agree" />
+            </div>
+            <div>
+                <label for="colleges">What college are you in?</label>
+                <input list="all-colleges" id="colleges" name="colleges" />
+                <datalist id="all-colleges">
+                    <option value="ERC"></option>
+                    <option value="Muir"></option>
+                    <option value="Revelle"></option>
+                    <option value="Marshall"></option>
+                    <option value="Warren"></option>
+                    <option value="Sixth"></option>
+                    <option value="Seventh"></option>
+                    <option value="Eigth"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="color-select">Choose a color:</label>
+                    <select name="colors" id="color-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="purple">Purple</option>
+                    </select>
+            </div>
+            <textarea id="comments" rows="5" cols="30">Enter additional comments...</textarea> 
+            <button type="submit">Submit Form</button> 
+        </fieldset>
+      </form>
+    </footer>
 
   </body>
 </html>
